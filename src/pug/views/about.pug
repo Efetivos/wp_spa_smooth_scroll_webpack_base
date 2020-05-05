@@ -1,0 +1,28 @@
+extends ../index
+block title
+    <?php
+    |   //Template Name: Initiatives: Tuberculosis in Nunavut
+    | $our_approach = get_field('our_approach');
+    |?>
+
+block content
+    .barba-container.page-about.e-wp(data-namespace="about" data-scroll-content)
+
+        header.e-wvw.e-hvh.e-flex-col
+            h1.e-serif.e-upper Our Initiatives (title)
+            h1.t-italic Our Initiatives (italic)
+            h1.t-regular Our Initiatives (regular)
+            h1.t-bold Our Initiatives (bold)
+            h1.e-sans Our Initiatives (standard)
+                
+
+        header.e-wvw.e-hvh.e-flex-col
+            a(href!='<?php echo get_site_url(); ?>/') 
+                h1.t-regular Back to Homepage
+                
+
+
+
+
+        <?php include 'includes/myfooter.php'; ?>
+

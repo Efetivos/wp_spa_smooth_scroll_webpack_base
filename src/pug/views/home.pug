@@ -1,0 +1,36 @@
+extends ../index
+block title
+    <?php
+    |   //Template Name: Home
+    | $our_approach = get_field('our_approach');
+    |?>
+
+block content
+    .barba-container.page-home.e-wp(data-namespace="home" data-scroll-content)
+
+        header.e-wvw.e-hvh.e-flex-col
+            h1.e-serif.e-upper <?=$our_approach['text']['title']?> (title)
+            h1.t-italic <?=$our_approach['text']['title']?> (italic)
+            h1.t-regular <?=$our_approach['text']['title']?> (regular)
+            h1.t-bold <?=$our_approach['text']['title']?> (bold)
+            h1.e-sans <?=$our_approach['text']['title']?> (standard)
+            a(href!='<?php echo get_site_url(); ?>/our-initiatives') 
+                h1.t-regular Our Initiatives
+            //-img(src!="<?=$our_approach['image']['url']; ?>" alt!="<?=$our_approach['image']['alt']; ?>").e-hp.e-wp.e-img-fit
+                
+
+        header.e-wvw.e-hvh.e-flex-col
+            h1.e-serif.e-upper <?=$our_approach['text']['title']?>
+            h1.t-italic <?=$our_approach['text']['title']?>
+            h1.t-regular <?=$our_approach['text']['title']?>
+            h1.t-bold <?=$our_approach['text']['title']?>
+            h1.e-sans <?=$our_approach['text']['title']?>
+            //h1.e-sans.t-white <?=$our_approach['text']['body']?>
+            //-img(src!="<?=$our_approach['image']['url']; ?>" alt!="<?=$our_approach['image']['alt']; ?>").e-hp.e-wp.e-img-fit
+                
+
+
+
+
+        <?php include 'includes/myfooter.php'; ?>
+
