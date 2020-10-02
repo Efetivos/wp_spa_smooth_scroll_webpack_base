@@ -1,1 +1,0 @@
-<div class="fader-transition e-wvw e-hvh e-fixed e-color"></div>

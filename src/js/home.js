@@ -11,7 +11,7 @@ class Home {
     }
 
     onScroll(scrolled) {
-        console.log(scrolled)
+        //console.log(scrolled)
     }
 }
 export const home = new Home()

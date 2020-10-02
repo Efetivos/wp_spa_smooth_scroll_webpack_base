@@ -3,8 +3,9 @@
 
 body
 	@include sans;
+	overscroll-behavior: none;
 	overflow-x: hidden
-	background: var(--soft)
+	background: #000
 	
 *
 	color: var(--color);
@@ -128,14 +129,12 @@ body
 .e-sans 
     @include sans
 
-.t-regular 
-    @include regular
+.t-medium 
+    @include medium
 
 .t-bold 
     @include bold
 
-.t-italic
-	@include italic
 
 .t-center
 	text-align: center

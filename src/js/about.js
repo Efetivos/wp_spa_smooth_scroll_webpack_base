@@ -10,7 +10,7 @@ class About {
     }
 
     onScroll(scrolled) {
-        console.log(scrolled)
+        //console.log(scrolled)
     }
 }
 export const about = new About()

@@ -8,4 +8,4 @@
        the_title();
    echo ' | '.get_bloginfo('name');  
 ?></title><link link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500&amp;display=swap" rel="stylesheet"><link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/app.css"><?php wp_head(); ?></head><body <?php body_class(); ?>><?php include 'includes/mymenu.php'; ?>
-<?php include 'includes/minicart.php'; ?><div class="e-wvw e-rel" id="barba-wrapper" data-scroll><!-- init foooter--></div></body></html>
+<?php include 'includes/minicart.php'; ?><div class="e-wvw e-rel" id="barba-wrapper" data-barba="wrapper" data-scroll><!-- init foooter--></div></body></html>

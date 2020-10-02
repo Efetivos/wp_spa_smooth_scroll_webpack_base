@@ -1,12 +1,11 @@
 extends ../index
 block title
     <?php
-    |   //Template Name: Initiatives: Tuberculosis in Nunavut
-    | $our_approach = get_field('our_approach');
+    |   //Template Name: About
     |?>
 
 block content
-    .barba-container.page-about.e-wp(data-namespace="about" data-scroll-content)
+    .barba-container.page-about.e-wp(data-barba="container", data-barba-namespace="about", data-scroll-content)
 
         header.e-wvw.e-hvh.e-flex-col
             h1.e-serif.e-upper Our Initiatives (title)
@@ -16,10 +15,12 @@ block content
             h1.e-sans Our Initiatives (standard)
                 
 
-        header.e-wvw.e-hvh.e-flex-col
+
+        .e-wvw.e-flex-col.e-hvh
+            img(src="https://unsplash.it/1920", alt="").img-load.e-wp.e-hp
+        .e-wvw.e-flex-col.e-hvh.e-flex
             a(href!='<?php echo get_site_url(); ?>/') 
-                h1.t-regular Back to Homepage
-                
+                h1.t-regular Go to Home
 
 
 

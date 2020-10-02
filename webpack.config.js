@@ -122,11 +122,6 @@ module.exports = {
             filename: 'index.php',
             template: './src/pug/index.pug',
         }),
-        //new HtmlWebpackPlugin({
-        //    title: 'CONTACT PAGE',
-        //    filename: 'contact.html',
-        //    template: './src/contact.pug'
-        //}),
         new ExtractTextPlugin({ //important: use: npm i -D extract-text-webpack-plugin@next
             filename: './css/app.css'
         }),
@@ -144,16 +139,6 @@ module.exports = {
             $: 'jquery',
             jQuery: 'jquery'
         })
-    ].concat(htmlPluginsViews).concat(htmlPluginsIncludes),
-
-
-
-
-    resolve: {
-        alias: { //Seção Alias
-            "ScrollMagicGSAP": "scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap",
-            "barba": path.resolve('node_modules', 'barba.js/dist/barba.min')
-        }
-    }
+    ].concat(htmlPluginsViews).concat(htmlPluginsIncludes)
 
 } //close module exports
