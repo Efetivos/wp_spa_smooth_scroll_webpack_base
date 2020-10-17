@@ -38,9 +38,7 @@ add_action( 'after_setup_theme', 'theme_prefix_setup' );
 
 
 function wpb_adding_scripts() { ?> 
-<link rel="preload" href="<?php echo get_template_directory_uri(); ?>/fonts/Aeonik-Bold.woff" as="font" type="font/woff" crossorigin> 
 <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/fonts/Aeonik-Regular.woff" as="font" type="font/woff" crossorigin> 
-<link rel="preload" href="<?php echo get_template_directory_uri(); ?>/fonts/Aeonik-Medium.woff" as="font" type="font/woff" crossorigin> 
 <link rel="preconnect" href="https://www.google-analytics.com/" crossorigin>
 <?php 
 	$parent_style = 'myjourney';
@@ -69,15 +67,7 @@ add_action('upload_mimes', 'add_file_types_to_uploads');
 //? - ========================= ADD STYLE  ========================= -//
 function styles_head() { ?>
 	<style>
-        @font-face{font-family: 'Aeonik-Bold'; font-display: fallback; src: url('<?php echo get_template_directory_uri(); ?>/fonts/Aeonik-Bold.eot'); src: url('<?php echo get_template_directory_uri(); ?>/fonts/Aeonik-Bold.eot?#iefix') format('embedded-opentype'), url('<?php echo get_template_directory_uri(); ?>/fonts/Aeonik-Bold.ttf') format('truetype'), url('<?php echo get_template_directory_uri(); ?>/fonts/Aeonik-Bold.woff') format('woff'), url('<?php echo get_template_directory_uri(); ?>/fonts/Aeonik-Bold.woff2') format('woff2'); font-weight: normal; font-style: normal;}
-
         @font-face{font-family: 'Aeonik-Regular'; font-display: fallback; src: url('<?php echo get_template_directory_uri(); ?>/fonts/Aeonik-Regular.eot'); src: url('<?php echo get_template_directory_uri(); ?>/fonts/Aeonik-Regular.eot?#iefix') format('embedded-opentype'), url('<?php echo get_template_directory_uri(); ?>/fonts/Aeonik-Regular.ttf') format('truetype'), url('<?php echo get_template_directory_uri(); ?>/fonts/Aeonik-Regular.woff') format('woff'), url('<?php echo get_template_directory_uri(); ?>/fonts/Aeonik-Regular.woff2') format('woff2'); font-weight: normal; font-style: normal;}
-
-        @font-face{font-family: 'Aeonik-Medium'; font-display: fallback; src: url('<?php echo get_template_directory_uri(); ?>/fonts/Aeonik-Medium.eot'); src: url('<?php echo get_template_directory_uri(); ?>/fonts/Aeonik-Medium.eot?#iefix') format('embedded-opentype'), url('<?php echo get_template_directory_uri(); ?>/fonts/Aeonik-Medium.ttf') format('truetype'), url('<?php echo get_template_directory_uri(); ?>/fonts/Aeonik-Medium.woff') format('woff'), url('<?php echo get_template_directory_uri(); ?>/fonts/Aeonik-Medium.woff2') format('woff2'); font-weight: normal; font-style: normal;}
-
-        @font-face{font-family: 'MaisonNeue-Book'; font-display: fallback; src: url('<?php echo get_template_directory_uri(); ?>/fonts/MaisonNeue-Book.eot'); src: url('<?php echo get_template_directory_uri(); ?>/fonts/MaisonNeue-Book.eot?#iefix') format('embedded-opentype'), url('<?php echo get_template_directory_uri(); ?>/fonts/MaisonNeue-Book.ttf') format('truetype'), url('<?php echo get_template_directory_uri(); ?>/fonts/MaisonNeue-Book.woff') format('woff'), url('<?php echo get_template_directory_uri(); ?>/fonts/MaisonNeue-Book.woff2') format('woff2'); font-weight: normal; font-style: normal;}
-
-        @font-face{font-family: 'MaisonNeue-Medium'; font-display: fallback; src: url('<?php echo get_template_directory_uri(); ?>/fonts/MaisonNeue-Medium.eot'); src: url('<?php echo get_template_directory_uri(); ?>/fonts/MaisonNeue-Medium.eot?#iefix') format('embedded-opentype'), url('<?php echo get_template_directory_uri(); ?>/fonts/MaisonNeue-Medium.ttf') format('truetype'), url('<?php echo get_template_directory_uri(); ?>/fonts/MaisonNeue-Medium.woff') format('woff'), url('<?php echo get_template_directory_uri(); ?>/fonts/MaisonNeue-Medium.woff2') format('woff2'); font-weight: normal; font-style: normal;}
 }
 
 
