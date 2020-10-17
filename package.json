@@ -45,6 +45,7 @@
     "terser": "3.14.1"
   },
   "dependencies": {
-    "@barba/core": "^2.9.7"
+    "@barba/core": "^2.9.7",
+    "@barba/prefetch": "^2.1.10"
   }
 }

@@ -1,9 +1,11 @@
 
 import barba from '@barba/core';
+import barbaPrefetch from '@barba/prefetch';
 import { gsap } from 'gsap'
 import { scroll } from './scroll'
 import { preloader } from './preloader';
 //import { firstload } from './first-load';
+barba.use(barbaPrefetch);
 
 export default class Spa {
     constructor() {
@@ -17,6 +19,8 @@ export default class Spa {
         this.pagesFromMenu = document.querySelectorAll('.menu-fs__each')
         let that = this
         barba.init({
+            preventRunning: true,
+            timeout: 5000,
             //? - =========================  VIEWS  ========================= -//
             //? - =========================  VIEWS  ========================= -//
 
@@ -30,34 +34,6 @@ export default class Spa {
                 //? --- about
                 {
                     namespace: 'about',
-                    beforeEnter(data) {
-                        //console.log(data);
-                    }
-                },
-                //? --- tour
-                {
-                    namespace: 'tour',
-                    beforeEnter(data) {
-                        //console.log(data);
-                    }
-                },
-                //? --- music
-                {
-                    namespace: 'music',
-                    beforeEnter(data) {
-                        //console.log(data);
-                    }
-                },
-                //? --- redime
-                {
-                    namespace: 'redimension',
-                    beforeEnter(data) {
-                        //console.log(data);
-                    }
-                },
-                //? --- contact
-                {
-                    namespace: 'contact',
                     beforeEnter(data) {
                         //console.log(data);
                     }
